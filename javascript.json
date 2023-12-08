@@ -1,0 +1,144 @@
+{
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"Console.log": {
+		"prefix": "j-log",
+		"body": [
+		  "console.log(${1:\"crash\"});$2"
+		],
+		"description": "Console.log"
+	  }
+
+	  "Toggle": {
+		"prefix": "j-toggle",
+		"body": [
+		  "/* Open Panel */",
+		  "$( \".trigger\" ).on('click', function() {",
+		  "  $(\".target\").toggleClass(\"open\");",
+		  "});"
+		],
+		"description": "Toggle"
+	  }
+
+	  "Tab": {
+		"prefix": "j-tab",
+		"body": [
+		  "var btn = $('.tab__item'),",
+		  "    info = $('.tab__info');",
+		  "btn.click(function(e) {",
+		  "    e.preventDefault();",
+		  "    var index = $(this).index();",
+		  "    info.hide();",
+		  "    info.eq(index).show();",
+		  "    $('.tab__item').removeClass('tab__item--current');",
+		  "    $(this).addClass('tab__item--current');",
+		  "});"
+		],
+		"description": "Tab"
+	  }
+
+	  "Scroll Down": {
+		"prefix": "j-scroll",
+		"body": [
+		  "$('.scroll-down').click(function(event){",
+		  "  event.preventDefault();",
+		  "  //scroll down the panel",
+		  "  $(\"html, body\").animate({ scrollTop: $('#anchor').offset().top }, 700);",
+		  "});"
+		],
+		"description": "Scroll Down"
+	  }
+
+	  "Scroll Class": {
+		"prefix": "j-scrollclass",
+		"body": [
+		  "/* Scroll Class */",
+		  "var scroll_pos = 0;",
+		  "$(document).scroll(function() {",
+		  "  scroll_pos = $(this).scrollTop();",
+		  "  if(scroll_pos > 40) {",
+		  "    $(\"body\").addClass( \"scroll-down\" );",
+		  "  } else {",
+		  "    $(\"body\").removeClass( \"scroll-down\" );",
+		  "  }",
+		  "});"
+		],
+		"description": "Scroll Class"
+	  }
+
+	  "Comment": {
+		"prefix": "j-com",
+		"body": [
+		  "/*  -----------------------------------------------------------------------------------------------",
+		  "  $1",
+		  "--------------------------------------------------------------------------------------------------- */"
+		],
+		"description": "Comment"
+	  }
+
+	  "Scroll Nav": {
+		"prefix": "j-scrollnav",
+		"body": [
+		  "// Scroll Navigation",
+		  "$(\"#menu a[href*='#']\").click( function() {",
+		  "  var target = $(this).attr(\"href\");",
+		  "  $(\"body, html\").animate({",
+		  "    scrollTop: $(target).offset().top - 80",
+		  "  }, 300);",
+		  "  return false;",
+		  "});"
+		],
+		"description": "Scroll Nav"
+	  }
+
+	  "Document Ready": {
+		"prefix": "j-doc",
+		"body": [
+		  "$( document ).ready(function() {",
+		  "  $1",
+		  "});"
+		],
+		"description": "Document Ready"
+	  }
+
+	  "Click": {
+		"prefix": "j-click",
+		"body": [
+		  "/* Click */",
+		  "$( \".trigger\" ).on('click', function() {",
+		  "  // do something",
+		  "});"
+		],
+		"description": "Click"
+	  }
+
+	  "Add Class": {
+		"prefix": "j-addclass",
+		"body": [
+		  "$(\"body\").addClass( \"my-css-class\" );"
+		],
+		"description": "Add Class"
+	  }
+
+	  "Remove Class": {
+		"prefix": "j-removeclass",
+		"body": [
+		  "$(\"body\").removeClass( \"my-css-class\" );"
+		],
+		"description": "Remove Class"
+	  }
+
+	
+}

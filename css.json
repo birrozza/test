@@ -1,0 +1,224 @@
+{
+	// Place your snippets for css here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+
+	"Block Basic": {
+		"prefix": "c-block",
+		"body": [
+		  ".${1:block}{width: 100%; height: 300px; background: #333; display: flex; align-items: center; justify-content: center;}",
+		  ".${1:block}__content{color:#fff; text-align:center}"
+		],
+		"description": "Block Basic"
+	  }
+
+	  "Col 3": {
+		"prefix": "c-col",
+		"body": [
+		  ".${1:column}{width: 100%; display: flex; align-items: center; justify-content: center;}",
+		  ".${1:column}__content{text-align:center;flex-basis: 33.33%}",
+		  "@media (max-width: 768px) {",
+		  "   .${1:column}__content{flex-basis: 100%}",
+		  "}"
+		],
+		"description": "Col 3"
+	  }
+	
+	  "Border": {
+		"prefix": "c-bd",
+		"body": [
+		  "border: 1px solid red;"
+		],
+		"description": "Border"
+	  }
+
+	  "Tab": {
+		"prefix": "c-tab",
+		"body": [
+		  ".tab__item{display:inline-block; padding:10px; background:#ccc; }",
+		  ".tab__info{border:1px solid #ddd; height:100px;}",
+		  ".tab__info{display:none}",
+		  ".tab__info--active{display:block}",
+		  ".tab__item--current{background-color:yellow}"
+		],
+		"description": "Tab"
+	  }
+
+	  "Comment": {
+		"prefix": "c-com",
+		"body": [
+		  "/* ! $1 */"
+		],
+		"description": "Comment"
+	  }
+
+	  "Comment Big": {
+		"prefix": "c-combig",
+		"body": [
+		  "/* -------------------------------------------------------------------------------- */",
+		  "/* ! $1 */",
+		  "/* -------------------------------------------------------------------------------- */"
+		],
+		"description": "Comment Big"
+	  }
+
+	  "Media Query": {
+		"prefix": "c-mediaquery",
+		"body": [
+		  "@media (max-width: 768px) {",
+		  "  $1",
+		  "}"
+		],
+		"description": "Media Query"
+	  }
+
+	  "Child Theme": {
+		"prefix": "c-childtheme",
+		"body": [
+		  "/*",
+		  "Theme Name: Theme Child",
+		  "Theme URL: http://yourdomain.com",
+		  "Description: Theme Child",
+		  "Theme Author: Mario Rossi",
+		  "Author URL: http://yourdomain.com",
+		  "Template: chaplin",
+		  "Version: 1.0.0",
+		  "Text Domain: theme-child",
+		  "",
+		  " */"
+		],
+		"description": "Child Theme"
+	  }
+
+	  "Animate All": {
+		"prefix": "c-animate",
+		"body": [
+		  ".animate {  -webkit-transition: all 0.3s ease-in-out;",
+		  "    	 -moz-transition: all 0.3s ease-in-out;",
+		  "    	 -ms-transition: all 0.3s ease-in-out;",
+		  "    	 -o-transition: all 0.3s ease-in-out;",
+		  "    	 transition: all 0.3s ease-in-out; }"
+		],
+		"description": "Animate All"
+	  }
+
+	  "Border Box": {
+		"prefix": "c-borderbox",
+		"body": [
+		  "*,",
+		  "*:before,",
+		  "*:after {",
+		  "        -webkit-box-sizing: border-box;",
+		  "        -moz-box-sizing: border-box;",
+		  "        box-sizing: border-box;",
+		  "}"
+		],
+		"description": "Border Box"
+	  }
+
+	  "Grid System": {
+		"prefix": "c-gridsystem",
+		"body": [
+		  "/* ! Grid System */",
+		  ".grid { margin: 0 auto; max-width: 1200px; display: flex; flex-flow: row; flex-wrap: wrap;}",
+		  ".grid--center{justify-content: center;}",
+		  ".col{ flex: 1;}",
+		  "",
+		  "[class*='col-'] { position: relative;}",
+		  "",
+		  ".col-20{ width: 20%; }",
+		  ".col-25{ width: 25%; }",
+		  ".col-30{ width: 30%; }",
+		  ".col-33{ width: 33.33%; }",
+		  ".col-50{ width: 50%; }",
+		  ".col-70{ width: 70%; }",
+		  ".col-80{ width: 80%; }",
+		  ".col-100{ width: 100%; }",
+		  "",
+		  "@media (max-width: 991px) {",
+		  "   .tab-20 { width: 20%; }",
+		  "   .tab-25 { width: 25%; }",
+		  "   .tab-33 { width: 33.33%; }",
+		  "   .tab-50 { width: 50%; }",
+		  "   .tab-100 { width: 100%; }",
+		  "}",
+		  "",
+		  "@media (max-width: 768px) {",
+		  "   [class*='col-'] { width: 100%;}",
+		  "   .sma-20 { width: 20%; }",
+		  "   .sma-25 { width: 25%; }",
+		  "   .sma-33 { width: 33.33%; }",
+		  "   .sma-50 { width: 50%; }",
+		  "   .sma-100 { width: 100%; }",
+		  "",
+		  "   .sma-hide{display:none}",
+		  "}",
+		  ""
+		],
+		"description": "Grid System"
+	  }
+
+	  "Font Family": {
+		"prefix": "c-fontfamily",
+		"body": [
+		  "font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;"
+		],
+		"description": "Font Family"
+	  }
+
+	  "Web Fonts": {
+		"prefix": "c-font",
+		"body": [
+		  "@font-face {",
+		  "    font-family: 'Neue Montreal';",
+		  "    src: url('NeueMontreal-Medium.woff2') format('woff2'),",
+		  "    url('NeueMontreal-Medium.woff') format('woff');",
+		  "}"
+		],
+		"description": "Web Fonts"
+	  }
+
+	  "Translate": {
+		"prefix": "c-translate",
+		"body": [
+		  "transform: translateY(20px);"
+		],
+		"description": "Translate"
+	  }
+
+	  "Transition": {
+		"prefix": "c-transition",
+		"body": [
+		  "transition: all 1s cubic-bezier(.215, .61, .355, 1);"
+		],
+		"description": "Transition"
+	  }
+
+	  "Box Shadow": {
+		"prefix": "c-boxshadow",
+		"body": [
+		  "box-shadow: 0 5px 20px rgba(0,0,0,.05);"
+		],
+		"description": "Box Shadow"
+	  }
+
+	  "Vertical Center": {
+		"prefix": "c-verticalcenter",
+		"body": [
+		  "display: flex; width: 100%; height: 100%; align-items: center;"
+		],
+		"description": "Vertical Center"
+	  }
+
+}

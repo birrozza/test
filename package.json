@@ -1,0 +1,18 @@
+{
+  "name": "node_test",
+  "version": "1.0.0",
+  "description": "test_suite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Angelo MIRABELLI",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
